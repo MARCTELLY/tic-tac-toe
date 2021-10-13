@@ -15,8 +15,8 @@ let playerMarkChoiceCircle = document.querySelector(".type-circle");
 let playerMarkChoiceX = document.querySelector(".type-x");
 
 // creation des joueurs
-let firstPlayer;
-let secondPlayer;
+let firstPlayer = new Player("Player1", "o");
+let secondPlayer = new Player("Player2", "x");
 
 cicleBtn.addEventListener("click", () => {
   playerMarkChoiceCircle.textContent = "Player 1";
